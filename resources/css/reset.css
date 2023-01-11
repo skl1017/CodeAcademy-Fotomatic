@@ -85,14 +85,16 @@ ul{
 }
 li{
   padding-inline: 20rem;
+  text-align: center;
 }
 header .logo{
   font-size: 24rem;
   flex: 1;
 }
+
 .main-content{
   position: relative;
-  top: 98rem;
+  top: 94rem;
 }
 .banner{
   background-image: url(../images/banner-landingpage.jpg);
@@ -101,7 +103,9 @@ header .logo{
     background-repeat: no-repeat;
     margin-bottom: ;
 }
-
+header nav .button{
+  display : none;
+}
 .center{
   text-align: center;
   display: flex;
@@ -169,6 +173,9 @@ h2{
   font-size: 36rem;
   line-height: 1.2;
   font-weight: bold;
+}
+#features-section h2{
+  margin-bottom: 20rem;
 }
 h3{
   font-weight: lighter;
@@ -247,4 +254,120 @@ footer .content{
 }
 footer .content .copyright{
   flex: 1;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 538px) and (orientation: portrait){
+
+  header .mobile ul li .button{
+    display: block;
+  }
+  #sign-up-cta .content{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+  }
+  #sign-up-cta{
+    margin-block: 100rem;
+  }
+  #sign-up-cta .content .email{
+    display: none;
+  }
+  #sign-up-section{
+    display: flex;
+    justify-content: center;
+  }
+  header nav .button{
+    display : flex;
+    background-color:#9DC20A;
+    color: white;
+    width: 75rem;
+    height: 40rem;
+    font-size: 16rem;
+    font-weight: 600;
+  }
+  header .content{
+    padding-inline: 10rem;
+  }
+}
+
+@media only screen and (max-width: 537px){
+  .main-content{
+    top: 50rem;
+  }
+  #sign-up-cta .content{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+  }
+  #sign-up-cta{
+    margin-block: 100rem;
+  }
+  #sign-up-cta .content .email{
+    display: none;
+  }
+  #sign-up-section{
+    display: flex;
+    justify-content: center;
+  }
+  header .mobile{
+    display: block;
+    width: 100%;
+  }
+  header .desktop{
+    display: none;
+  }
+  header .mobile .button{
+    display : flex;
+    background-color:#9DC20A;
+    color: white;
+    width: 75rem;
+    height: 40rem;
+    font-size: 16rem;
+    font-weight: 600;
+  }
+  header{
+    height: 48rem;
+  }
+  header .content{
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    height: 48rem;
+  }
+  header .mobile ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #features-section {
+    flex-direction: column;
+  }
+  #features-section .feature {
+    margin: 0rem 0rem;
+  }
+  .quote{
+    font-size: 24rem;
+    margin-right: 0rem;
+  }
+  #quotes-section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 175rem;
+  }
+  footer .content{
+    padding: 5rem 16rem;
+  }
+  #features-section h2{
+    font-size: 18rem; 
+    margin-bottom: 10rem;
+  }
+  #features-section .image-container{
+    margin-bottom: 20rem;
+  }
+  #features-section h3{
+    font-size: 14rem;
+  }
 }
